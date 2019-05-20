@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>ข้อมูลสถิติเบื้องต้น "รัฐวิสาหกิจ"</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>งบประมาณรายจ่ายของ รัฐวิสาหกิจ</h1>  
+    </div>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="./page.html">แบ่งตามสาขา</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">แบ่งตามประเภทงบประมาณ</a>
+        </li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- import chart library -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- import local chart -->
+    <script type="text/javascript" src="./barchart.js"></script>
+    <script type="text/javascript" src="./piechart.js"></script>
+    <script type="text/javascript" src="./timeseries.js"></script>
+    
+    <div class="row">
+        <div id="timeseries_div", class="col"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div id="barchart_div", class="leftchart"></div>
+        </div>
+        <div id="piechart_div", class="col"></div>
+    </div>
+</body>
+</html>
